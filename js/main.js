@@ -1,18 +1,28 @@
-function getRandomIntBetween(min,max) {
+function getRandomIntBetween(min, max) {
+
   if (min < 0 || max < 0) {
+
     return undefined;
+
   }
-  let result = Math.round(Math.random() * (Math.abs(min - max)) + Math.min(max,min));
-  return result;
+
+  return (Math.round(Math.random() * (Math.abs(min - max)) + Math.min(max,min)));
+
 }
-let randomInt = getRandomIntBetween(2,8);
+
+getRandomIntBetween(2, 8);
 
 
-function getRandomFloatBetween(min,max,decimal_places) {
-  if (min < 0 || max < 0 || decimal_places < 0) {
+function getRandomFloatBetween(min, max, decimalPlaces) {
+
+  if (min < 0 || max < 0 || decimalPlaces < 0) {
+
     return undefined;
+
   }
-  let result = Math.random() * (Math.abs(min - max)) + Math.min(max,min);
-  return result.toFixed(decimal_places);
+
+  return (Math.random() * (Math.abs(min - max)) + Math.min(max,min)).toFixed(decimalPlaces);
+
 }
-let randomFloat = getRandomFloatBetween(17,8,3);
+
+getRandomFloatBetween(17, 8, 3);
