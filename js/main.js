@@ -24,7 +24,7 @@ function createAd() {
     'Замок',
     'Квартира',
     'Дом',
-    'Бунгало'
+    'Бунгало',
   ];
   let selectTitle = function () {
     return titlesList[Math.round(Math.random() * (titlesList.length - 1))]
@@ -35,7 +35,7 @@ function createAd() {
     'palace',
     'flat',
     'house',
-    'bungalow'
+    'bungalow',
   ];
   let selectType = function () {
     return typesList[titlesList.indexOf(titleSelected)]
@@ -44,7 +44,7 @@ function createAd() {
   let checkTimes = [
     '12:00',
     '13:00',
-    '14:00'
+    '14:00',
   ];
 
   let featuresList = [
@@ -53,7 +53,7 @@ function createAd() {
     'parking',
     'washer',
     'elevator',
-    'conditioner'
+    'conditioner',
   ];
   let selectFeatures = function() {
     let featuresSelectedCount = Math.round(Math.random() * (featuresList.length - 1));
@@ -73,7 +73,7 @@ function createAd() {
   let photosList = [
     'http://o0.github.io/assets/images/tokyo/hotel1.jpg',
     'http://o0.github.io/assets/images/tokyo/hotel2.jpg',
-    'http://o0.github.io/assets/images/tokyo/hotel3.jpg'
+    'http://o0.github.io/assets/images/tokyo/hotel3.jpg',
   ];
   let selectPhotos = function () {
     let photosSelectedCount = Math.round(Math.random() * (photosList.length - 1));
@@ -92,7 +92,7 @@ function createAd() {
 
   let ad = {
     author: {
-      avatar: 'img/avatars/user0' + Math.round(Math.random() * 7 + 1) + '.png'
+      avatar: 'img/avatars/user0' + Math.round(Math.random() * 7 + 1) + '.png',
     },
     offer: {
       title: titleSelected,
@@ -108,9 +108,9 @@ function createAd() {
       photos: selectPhotos(),
       location: {
         x: getRandomFloatBetween(35.65000,35.70000,5),
-        y: getRandomFloatBetween(139.70000,139.80000,5)
-      }
-    }
+        y: getRandomFloatBetween(139.70000,139.80000,5),
+      },
+    },
   }
 
   return ad
@@ -118,7 +118,7 @@ function createAd() {
 
 function createAdArray(number) {
   let adArray = [];
-  for (i=1; i <= number; i++) {
+  for (let i=1; i <= number; i++) {
     adArray.push(createAd())
   }
 
