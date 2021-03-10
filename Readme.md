@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Роман Крылов](https://up.htmlacademy.ru/javascript/22/user/89449).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Устименко](https://htmlacademy.ru/profile/spiritmoon).
 
 ---
 
